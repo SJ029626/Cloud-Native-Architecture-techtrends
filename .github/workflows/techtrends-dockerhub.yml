@@ -1,11 +1,11 @@
 name: TechTrends - Package with Docker
 on:
   push:
-    brances: [main]
+    branches: [main]
 jobs:
   techtrend-build:
     runs-on: ubuntu-latest
-  steps:
+    steps:
     - name: Checking out
       uses: actions/checkout@v2
     - name: Setting up Docker Build

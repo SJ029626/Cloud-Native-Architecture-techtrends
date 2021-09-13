@@ -1,0 +1,35 @@
+## Docker commands used to build the application 
+sudo docker build -t sanyamj/techtrends .
+
+## Docker commands used to run the application
+sudo docker run -d -p 7111:3111 sanyamj/techtrends
+
+## Docker commands used to get the application logs
+sudo docker logs e27fd3da274f
+
+## Logs from the container running the TechTrends application
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 16:37:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 16:37:41] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 16:37:42] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 16:37:54] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 16:38:00] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:10:46] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:02] "GET / HTTP/1.1" 200 -
+INFO:app:About US Page is Retrieved
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:04] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:09] "GET / HTTP/1.1" 200 -
+INFO:app:Existing Article 2020 CNCF Annual Report retrieved!
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:12] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:15] "GET /create HTTP/1.1" 200 -
+INFO:app:The Following Article Hi  has been created
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:24] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:12:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:12:01] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:12:01] "GET /favicon.ico HTTP/1.1" 404 -

@@ -1,8 +1,7 @@
 name: TechTrends - Package with Docker
-'on':
+on:
   push:
-    brances:
-      - main
+    brances: [main]
 jobs:
   techtrend-docker-build:
     runs-on: ubuntu-latest
@@ -26,4 +25,3 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/techtrends:latest
-

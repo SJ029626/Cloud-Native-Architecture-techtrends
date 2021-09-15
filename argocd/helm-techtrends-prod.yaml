@@ -13,5 +13,5 @@ spec:
       valueFiles:
       - values-prod.yaml
     path: helm
-    repoURL: https://github.com/dblsilverio/cnaand-techtrends
+    repoURL: https://github.com/SJ029626/Cloud-Native-Architecture-techtrends
     targetRevision: HEAD

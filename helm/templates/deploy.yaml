@@ -27,7 +27,7 @@ spec:
           httpGet:
               path: {{ .Values.livenessProbe.path }}
               port: {{ .Values.containerPort }}
-        resources: {{ toYaml .Values.resources | indent 12 }}
+        resources: {{- toYaml .Values.resources | indent 12 }}
         readinessProbe:
           httpGet:
             path: {{ .Values.readinessProbe.path }}

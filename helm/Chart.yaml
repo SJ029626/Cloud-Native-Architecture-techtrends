@@ -1,6 +1,6 @@
 apiVersion: v1
 name: techtrends
-description: Cloud Native Application Architecture Program Nanodegree [TechTrends]
+description: CNAAP[TechTrends]
 keywords:
   - techtrends
 version: 1.0.0

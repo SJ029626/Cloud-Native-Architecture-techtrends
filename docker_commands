@@ -1,3 +1,4 @@
+## Maintainer: Sanyam Jain
 ## Docker commands used to build the application 
 sudo docker build -t sanyamj/techtrends .
 
@@ -5,31 +6,28 @@ sudo docker build -t sanyamj/techtrends .
 sudo docker run -d -p 7111:3111 sanyamj/techtrends
 
 ## Docker commands used to get the application logs
-sudo docker logs e27fd3da274f
+sudo docker logs 1a1531b5c0cf
 
 ## Logs from the container running the TechTrends application
+Every 2.0s: docker logs 1a1531b5c0cf                                                                                          techietrendie: Thu Sep 16 04:11:28 2021
+
  * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
 INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 16:37:41] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 16:37:41] "GET /static/css/main.css HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 16:37:42] "GET /favicon.ico HTTP/1.1" 404 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 16:37:54] "GET /healthz HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 16:38:00] "GET /metrics HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:10:46] "GET /metrics HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:02] "GET / HTTP/1.1" 200 -
-INFO:app:About US Page is Retrieved
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:04] "GET /about HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:3.7.118.226 - - [16/Sep/2021 04:07:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:3.7.118.226 - - [16/Sep/2021 04:07:48] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:3.7.118.226 - - [16/Sep/2021 04:07:49] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:3.7.118.226 - - [16/Sep/2021 04:10:53] "GET / HTTP/1.1" 200 -
 INFO:app:Existing Article 2020 CNCF Annual Report retrieved!
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:12] "GET /1 HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:15] "GET /create HTTP/1.1" 200 -
-INFO:app:The Following Article Hi  has been created
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:24] "POST /create HTTP/1.1" 302 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:11:24] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:12:01] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:12:01] "GET /static/css/main.css HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [12/Sep/2021 17:12:01] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:3.7.118.226 - - [16/Sep/2021 04:10:55] "GET /1 HTTP/1.1" 200 -
+INFO:app:Existing Article Kubernetes v1.20 Release Notes retrieved!
+INFO:werkzeug:3.7.118.226 - - [16/Sep/2021 04:10:58] "GET /3 HTTP/1.1" 200 -
+INFO:app:About US Page is Retrieved
+INFO:werkzeug:3.7.118.226 - - [16/Sep/2021 04:11:01] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:3.7.118.226 - - [16/Sep/2021 04:11:03] "GET /create HTTP/1.1" 200 -
+INFO:app:The Following Article great has been created
+INFO:werkzeug:3.7.118.226 - - [16/Sep/2021 04:11:10] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:3.7.118.226 - - [16/Sep/2021 04:11:10] "GET / HTTP/1.1" 200 -

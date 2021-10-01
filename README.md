@@ -57,4 +57,4 @@ Also we need to open port on google cloud, one can refer this link: https://www.
 #### Also Remember here we are using the pull based mechanism for all of this and not push based mechanism.
 
 #### Screenshot which show I have complete my project:
-[!https://github.com/SJ029626/Cloud-Native-Architecture-techtrends/blob/main/completion.png]
+![My project completion](https://github.com/SJ029626/Cloud-Native-Architecture-techtrends/blob/main/completion.png)

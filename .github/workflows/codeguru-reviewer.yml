@@ -1,5 +1,7 @@
 steps:
-
+on:
+  push:
+    branches: [main]
 # Step 1: Checkout the repository and provide your AWS credentials
 - name: Checkout repository
   uses: actions/checkout@v2

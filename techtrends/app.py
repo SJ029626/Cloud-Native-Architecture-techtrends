@@ -10,6 +10,7 @@ import logging # For enabling Logging
 import sys
 
 count_of_connection = 0
+password = "test@admin123"
 # Function to get a database connection.
 # This function connects to database with the name `database.db`
 app = Flask(__name__)
